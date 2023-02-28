@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_98813cee5bad0c62192f0cdd33e7f07d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_98813cee5bad0c62192f0cdd33e7f07d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_98813cee5bad0c62192f0cdd33e7f07d = L.map(
+                "map_98813cee5bad0c62192f0cdd33e7f07d",
+                {
+                    center: [-37.87324528301887, 144.9112075471698],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ef884dbcefd97d4a5edeb21bf5088f7d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            var marker_76b437f883f9cf6dce0db6ab5b19a4ec = L.marker(
+                [-37.583, 141.333],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_76b437f883f9cf6dce0db6ab5b19a4ec.bindTooltip(
+                `<div>
+                     CASTERTON
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c96ca2e794463e40b2268d92a95747b6 = L.marker(
+                [-37.867, 144.75],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_c96ca2e794463e40b2268d92a95747b6.bindTooltip(
+                `<div>
+                     LAVERTON RAAF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0eec060b9ae75c9eda1518707f53e00 = L.marker(
+                [-38.217, 146.467],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_c0eec060b9ae75c9eda1518707f53e00.bindTooltip(
+                `<div>
+                     LATROBE VALLEY AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f9ec3456105ce6d49371ddb8a76c451 = L.marker(
+                [-37.883, 147.567],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_4f9ec3456105ce6d49371ddb8a76c451.bindTooltip(
+                `<div>
+                     BAIRNSDALE AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42eae6fd57904ca37f2bbd344105f10e = L.marker(
+                [-37.7, 148.083],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_42eae6fd57904ca37f2bbd344105f10e.bindTooltip(
+                `<div>
+                     MT NOWA NOWA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51e79a4a9355445d6452a9e5410a2bb8 = L.marker(
+                [-37.733, 144.9],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_51e79a4a9355445d6452a9e5410a2bb8.bindTooltip(
+                `<div>
+                     ESSENDON AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2336235e898197b165db1502caf92e26 = L.marker(
+                [-38.039, 144.469],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_2336235e898197b165db1502caf92e26.bindTooltip(
+                `<div>
+                     AVALON
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd3a090c8a788ecf6d82ee959f065d9a = L.marker(
+                [-37.15, 146.433],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_dd3a090c8a788ecf6d82ee959f065d9a.bindTooltip(
+                `<div>
+                     MOUNT BULLER AWS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86a7da13686b40ba8fe4efeebe53ea03 = L.marker(
+                [-38.233, 143.783],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_86a7da13686b40ba8fe4efeebe53ea03.bindTooltip(
+                `<div>
+                     MT GELLIBRAND
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e874d281b39c154484840a4548b5bfce = L.marker(
+                [-38.567, 146.75],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_e874d281b39c154484840a4548b5bfce.bindTooltip(
+                `<div>
+                     YARRAM AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79a794b86085da88949369f6c3eac854 = L.marker(
+                [-37.75, 147.133],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_79a794b86085da88949369f6c3eac854.bindTooltip(
+                `<div>
+                     MT MOORNAPA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19884d52091cb703141919e7ab53bdf6 = L.marker(
+                [-38.083, 144.333],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_19884d52091cb703141919e7ab53bdf6.bindTooltip(
+                `<div>
+                     GEELONG CITY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_542b378eddd27acc8c2218c251bcbbc5 = L.marker(
+                [-38.8, 146.2],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_542b378eddd27acc8c2218c251bcbbc5.bindTooltip(
+                `<div>
+                     YANAKIE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f57054a2182e5ffdcf363b71c64eaaf1 = L.marker(
+                [-37.867, 145.25],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_f57054a2182e5ffdcf363b71c64eaaf1.bindTooltip(
+                `<div>
+                     SCORESBY RESEARCH INSTITUTE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d932a7abb2053238bd535307a592be9 = L.marker(
+                [-37.917, 141.267],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_4d932a7abb2053238bd535307a592be9.bindTooltip(
+                `<div>
+                     DARTMOOR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8be011edac19ee94f27efa1f4bf7bca = L.marker(
+                [-37.833, 146.267],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_f8be011edac19ee94f27efa1f4bf7bca.bindTooltip(
+                `<div>
+                     MT BAW BAW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39d0e78ce96ce10171bf12d83881b25b = L.marker(
+                [-37.6, 149.733],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_39d0e78ce96ce10171bf12d83881b25b.bindTooltip(
+                `<div>
+                     MALLACOOTA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2f9e379c36857b5a942229f437550df = L.marker(
+                [-38.45, 145.3],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_a2f9e379c36857b5a942229f437550df.bindTooltip(
+                `<div>
+                     RHYLL (AWS)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b57ed04ec41db0a870fdff7d9d9a3dc3 = L.marker(
+                [-38.317, 141.467],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_b57ed04ec41db0a870fdff7d9d9a3dc3.bindTooltip(
+                `<div>
+                     PORTLAND CASHMORE AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32fbb4141f054831c3dfa6574c1e3f07 = L.marker(
+                [-37.65, 142.067],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_32fbb4141f054831c3dfa6574c1e3f07.bindTooltip(
+                `<div>
+                     HAMILTON AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f480938926088963016c2af351725562 = L.marker(
+                [-38.4, 142.233],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_f480938926088963016c2af351725562.bindTooltip(
+                `<div>
+                     PORT FAIRY AWS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d04b2284b2d8e413805304accab8de2d = L.marker(
+                [-37.3, 142.6],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_d04b2284b2d8e413805304accab8de2d.bindTooltip(
+                `<div>
+                     MOUNT WILLIAM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28c99e9c285448bcbe53602328b18ad1 = L.marker(
+                [-37.233, 143.2],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_28c99e9c285448bcbe53602328b18ad1.bindTooltip(
+                `<div>
+                     BEN NEVIS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ebcf0ca6dca1158b3b1b09997048df4 = L.marker(
+                [-37.067, 142.733],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_7ebcf0ca6dca1158b3b1b09997048df4.bindTooltip(
+                `<div>
+                     STAWELL AERODROME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30e3a6e3400d7f56c31d1e4f482a90c4 = L.marker(
+                [-38.283, 142.45],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_30e3a6e3400d7f56c31d1e4f482a90c4.bindTooltip(
+                `<div>
+                     WARRNAMBOOL AIRPORT NDB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be13e709da84f2eb19e6a723d79a0a57 = L.marker(
+                [-38.067, 142.767],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_be13e709da84f2eb19e6a723d79a0a57.bindTooltip(
+                `<div>
+                     MORTLAKE RACECOURSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c615b22423cc639794636196bf683f9 = L.marker(
+                [-38.85, 143.517],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_2c615b22423cc639794636196bf683f9.bindTooltip(
+                `<div>
+                     CAPE OTWAY LIGHTHOUSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9926d2ea0e585f2fee9768639cf04884 = L.marker(
+                [-38.45, 144.1],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_9926d2ea0e585f2fee9768639cf04884.bindTooltip(
+                `<div>
+                     AIREYS INLET
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62c11148f8de90a15b82a354b006e3dc = L.marker(
+                [-37.517, 143.783],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_62c11148f8de90a15b82a354b006e3dc.bindTooltip(
+                `<div>
+                     BALLARAT AERODROME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e9801ac6c94e3287ff4929d6f3630d8 = L.marker(
+                [-38.033, 144.467],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_8e9801ac6c94e3287ff4929d6f3630d8.bindTooltip(
+                `<div>
+                     AVALON AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b8bc0a8e58fc7296a2b8b76baa2f040 = L.marker(
+                [-38.167, 144.367],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_4b8bc0a8e58fc7296a2b8b76baa2f040.bindTooltip(
+                `<div>
+                     GEELONG RACECOURSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_315cf8f579f65306346723e99a4aa1b0 = L.marker(
+                [-37.383, 144.967],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_315cf8f579f65306346723e99a4aa1b0.bindTooltip(
+                `<div>
+                     KILMORE GAP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73c1a0aca6a18dfeca6d0e16f865cb80 = L.marker(
+                [-37.9, 144.117],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_73c1a0aca6a18dfeca6d0e16f865cb80.bindTooltip(
+                `<div>
+                     SHEOAKS AWS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b93050153b6ca5f7bf2ab746ad0936c5 = L.marker(
+                [-37.728, 144.902],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_b93050153b6ca5f7bf2ab746ad0936c5.bindTooltip(
+                `<div>
+                     MELBOURNE ESSENDON
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b0872b6fa0c4ed087092bc35a57476d = L.marker(
+                [-37.976, 145.102],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_0b0872b6fa0c4ed087092bc35a57476d.bindTooltip(
+                `<div>
+                     MELBOURNE MOORABBIN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea009caf6824b8aa2ca0ce4d6f65734b = L.marker(
+                [-37.867, 145.333],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_ea009caf6824b8aa2ca0ce4d6f65734b.bindTooltip(
+                `<div>
+                     FERNY CREEK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82e9c8c0b20972f1c2a649d5fcfa081a = L.marker(
+                [-37.217, 145.833],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_82e9c8c0b20972f1c2a649d5fcfa081a.bindTooltip(
+                `<div>
+                     EILDON FIRE TOWER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8c90ed8792a2470b60c6ef13d19c2c9 = L.marker(
+                [-38.633, 145.811],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_b8c90ed8792a2470b60c6ef13d19c2c9.bindTooltip(
+                `<div>
+                     POUND CREEK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f821a08a02c24c334e301ab44d59f5e9 = L.marker(
+                [-39.117, 146.417],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_f821a08a02c24c334e301ab44d59f5e9.bindTooltip(
+                `<div>
+                     WILSONS PROMONTORY LIGHTHOUSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acf38ec061696e7948599d6e22e6ca0b = L.marker(
+                [-38.35, 145.167],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_acf38ec061696e7948599d6e22e6ca0b.bindTooltip(
+                `<div>
+                     CERBERUS AWS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5596be4c740c6e0d16724ae3b3a02b46 = L.marker(
+                [-38.099, 147.149],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_5596be4c740c6e0d16724ae3b3a02b46.bindTooltip(
+                `<div>
+                     EAST SALE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a9a6c806ba1f8b6d2bd39f74558777a = L.marker(
+                [-37.1, 147.6],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_1a9a6c806ba1f8b6d2bd39f74558777a.bindTooltip(
+                `<div>
+                     OMEO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fa61a1f97645c163b91a8845ccbadde = L.marker(
+                [-37.217, 148.267],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_5fa61a1f97645c163b91a8845ccbadde.bindTooltip(
+                `<div>
+                     GELANTIPY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1f7c7a10f654dcb35150a1fc1dfa90c = L.marker(
+                [-37.333, 149.017],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_e1f7c7a10f654dcb35150a1fc1dfa90c.bindTooltip(
+                `<div>
+                     COMBIENBAR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1220a99d3293fac3f2fe09aad0c6beba = L.marker(
+                [-37.567, 149.9],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_1220a99d3293fac3f2fe09aad0c6beba.bindTooltip(
+                `<div>
+                     GABO ISLAND LIGHTHOUSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_161c17e23527754faf5c611832d444c1 = L.marker(
+                [-37.117, 141.8],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_161c17e23527754faf5c611832d444c1.bindTooltip(
+                `<div>
+                     KANAGULK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16e6cdd4dd88fcedd743355f6c42a5e9 = L.marker(
+                [-37.017, 141.267],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_16e6cdd4dd88fcedd743355f6c42a5e9.bindTooltip(
+                `<div>
+                     EDENHOPE AIRPORT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c1c78a7c3639329aa2aeafef48de7b7 = L.marker(
+                [-37.7, 142.933],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_4c1c78a7c3639329aa2aeafef48de7b7.bindTooltip(
+                `<div>
+                     WESTMERE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24afc0a9c9ce026f7f5d0968efbf68aa = L.marker(
+                [-37.733, 145.1],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_24afc0a9c9ce026f7f5d0968efbf68aa.bindTooltip(
+                `<div>
+                     VIEWBANK (ARPNSA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10ca0dcd89acdff47476c13ac129b5b2 = L.marker(
+                [-37.683, 148.467],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_10ca0dcd89acdff47476c13ac129b5b2.bindTooltip(
+                `<div>
+                     ORBOST
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2245545fd3f94885c988cd3e3f0df6f = L.marker(
+                [-37.833, 144.983],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_f2245545fd3f94885c988cd3e3f0df6f.bindTooltip(
+                `<div>
+                     MELBOURNE (OLYMPIC PARK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f30acecee9122c6106f5e775f3ea25a = L.marker(
+                [-38.433, 141.55],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_0f30acecee9122c6106f5e775f3ea25a.bindTooltip(
+                `<div>
+                     CAPE NELSON LIGHTHOUSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_542ee1a8638171c8928215fada7433ee = L.marker(
+                [-37.673, 144.843],
+                {}
+            ).addTo(map_98813cee5bad0c62192f0cdd33e7f07d);
+        
+    
+            marker_542ee1a8638171c8928215fada7433ee.bindTooltip(
+                `<div>
+                     MELBOURNE INTL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
